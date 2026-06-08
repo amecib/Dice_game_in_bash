@@ -1,5 +1,5 @@
 #!/bin/bash
-#https://colors.sh/ : site internet pour la couleur et l'aspect graphique
+
 
 NO_FORMAT="\033[0m"
 F_BOLD="\033[1m"
@@ -11,11 +11,10 @@ C_VIOLET="\033[38;5;163m"
 C_BLUE="\033[38;5;51m"
 clear
 
-#fonction pour mettre en attente le jeu et les messages
 pause(){
     sleep "$1"
 }
-#storyboard pour introduire le jeu :
+
 
 echo -e "${C_VIOLET}Psss...${NO_FORMAT}"
 pause 1
@@ -44,7 +43,7 @@ pause 1
 echo -e "${F_BOLD}${C_GOLD}Bonne chance ! ;)${NO_FORMAT}"
 pause 1.5
 
-#fonction qui cherche le minimum et le maximum dans un tableau, indispensable pour l'échelle 
+
 
 min_max(){
     minimum=$1
@@ -63,7 +62,6 @@ min_max(){
     echo "$minimum $maximum" 
 }
 
-# Piste d'amélioration :  animation des dés, je me suis inspiré des machines de casino .
 roll_animation_V2() {
    local f1=$1
    local f2=$2
@@ -73,21 +71,21 @@ roll_animation_V2() {
     echo ""
     for j in {0..80}
     do
-        tput cuu 3   # remonte proprement de 3 lignes , site internet : https://doc.ubuntu-fr.org/tutoriel/formater_le_texte_dans_le_terminal_avec_tput, section 3.3.3 Remonter d'une lign
+        tput cuu 3   
         echo -e "${C_GOLD}+-----------+${NO_FORMAT}"
         echo -e "${C_WHITE}| $((RANDOM%6+1)) | $((RANDOM%6+1)) | $((RANDOM%6+1)) |${NO_FORMAT}" 
         echo -e "${C_GOLD}+-----------+${NO_FORMAT}"
         sleep 0.001
     done
 
-    # Résultat final
+
     tput cuu 3
     echo -e "${C_GOLD}+-----------+${NO_FORMAT}"
     echo -e "${C_WHITE}| $f1 | $f2 | $f3 |${NO_FORMAT}"
     echo -e "${C_GOLD}+-----------+${NO_FORMAT}"
 }
 
-#on entre dans le jeu et on initialise
+
 
 echo "Quel mode souhaitez-vous utiliser ? Entre 1 si 1 joueur et 2 si multijoueur"
 read choix
@@ -110,16 +108,16 @@ else
 fi
     for((i=0;i<$nb_joueurs;i++))
     do
-        cpt[$i]=0                   #Comme on a pas de variables booléennes en Bash, l'utilisation des flags permet entre autres de "simuler" une variable booléene
-        flag_tris[$i]=0             # le 0 correspond à False, on a toujours pas eu de tris/paire/ échelle, le 1 correspond à True on a obtenu une condition 
-        flag_paire[$i]=0            #parmi les 3
+        cpt[$i]=0                   
+        flag_tris[$i]=0             
+        flag_paire[$i]=0            
         flag_echelle[$i]=0
-        echo "Saisir le nom du joueur $((i+1))" #on travaille de {0,..., nb_joueurs -1} le +1 ici permet de réindexer par rapport à la "vraie vie"
+        echo "Saisir le nom du joueur $((i+1))" 
         read -r nom_i
         nom[$i]="$nom_i"
     done
     vainqueur=-1
-# le jeu commence
+
     while [ $vainqueur -eq -1 ]
     do
         for((i=0; i<$nb_joueurs; i++))
@@ -136,7 +134,6 @@ fi
             val_min=$(echo "$result" | cut -d' ' -f1)
             val_max=$(echo "$result" | cut -d' ' -f2)      
 
-#On utilise une structure  if - elif - else afin d'assurer l'unicité de la condition validée à chaque tour
 
             if [ "${flag_tris[$i]}" -eq 0 ] && [ $d1 -eq $d2 ] && [ $d2 -eq $d3 ]
             then
@@ -162,13 +159,13 @@ fi
             if [ $total -eq 3 ]
             then
                 vainqueur=$i
-                break 2                 # d'après ce site : https://linuxize.com/post/bash-break-continue/
+                break 2                 
             fi
             pause 0.5
         done
     done
 
-#annonce du vainqueur et fin du jeu
+
 echo -e "${F_BOLD}${C_GOLD}==============================================${NO_FORMAT}"
 echo -e "${F_BOLD}${C_GOLD}Le grand vainqueur est : ${nom[$vainqueur]} en ${cpt[$vainqueur]} tours !!${NO_FORMAT}"
 echo -e "${F_BOLD}${C_GOLD}==============================================${NO_FORMAT}"
