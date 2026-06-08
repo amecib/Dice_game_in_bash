@@ -1,4 +1,4 @@
-**Caesars Palace Dice Game****
+**Caesars Palace Dice Game**
 Our semester project is a terminal-based dice game written entirely in Bash/Shell. It brings a text-based casino atmosphere straight to your terminal, complete with custom animations and color coding.
 Features
 - **Game Modes**: Play solo to beat your own score or challenge friends in local multiplayer.
@@ -8,7 +8,7 @@ Features
   2. **Paire:** At least 2 dice have the same value
   3. **Échelle:** A straight (3 consecutive values)
 
-****Requirements & Installation**
+**Requirements & Installation**
 You just need a Linux/macOS terminal with Bash. 
 1. Clone the repository:
 ```bash
