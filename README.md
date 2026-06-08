@@ -1,21 +1,88 @@
-**Caesars Palace Dice Game**
-Our semester project is a terminal-based dice game written entirely in Bash/Shell. It brings a text-based casino atmosphere straight to your terminal, complete with custom animations and color coding.
-Features
-- **Game Modes**: Play solo to beat your own score or challenge friends in local multiplayer.
-- **Visuals**: Custom dice-rolling animations using `tput` and rich terminal colors.
-- **Winning Conditions:** Complete all 3 unique combinations to win:
-  1. **Tris:** Three-of-a-kind (all 3 dice have the same value)
-  2. **Paire:** At least 2 dice have the same value
-  3. **Échelle:** A straight (3 consecutive values)
+#  Caesars Palace Dice Game
 
-**Requirements & Installation**
-You just need a Linux/macOS terminal with Bash. 
-1. Clone the repository:
+A terminal-based casino dice game written entirely in **Bash/Shell**.
+
+This project was developed as part of a semester assignment and recreates a casino-style experience directly in your terminal, featuring colorful output, animated dice rolls, and both single-player and multiplayer modes.
+
+---
+
+## Features
+
+### Game Modes
+- **Single Player** – Try to complete all winning combinations as quickly as possible.
+- **Local Multiplayer** – Challenge your friends on the same machine.
+
+###  Terminal Experience
+- Custom dice-rolling animations using `tput`
+- Colored terminal output for an immersive casino atmosphere
+- Simple and intuitive text-based interface
+
+###  Winning Conditions
+
+To win the game, a player must achieve all **three unique combinations** at least once:
+
+| Combination | Description |
+|------------|-------------|
+| **Tris** | Three of a kind (all three dice show the same value) |
+| **Paire** | A pair (at least two dice show the same value) |
+| **Échelle** | A straight (three consecutive values, e.g. 2-3-4) |
+
+---
+
+## Requirements
+
+- Linux or macOS
+- Bash shell
+- A terminal supporting ANSI colors and `tput`
+
+No additional dependencies are required.
+
+---
+
+## Installation
+
+Clone the repository:
+
 ```bash
-   git clone [https://github.com/amecib/Dice_game_in_bash.git](https://github.com/amecib/Dice_game_in_bash.git)
-   cd Dice_game_in_bash
-````
-2. Make the script executable:
-   chmod +x Dice_Game.sh
-3. Run the game:
-   ./Dice_Game.sh
+git clone https://github.com/amecib/Dice_game_in_bash.git
+cd Dice_game_in_bash
+```
+
+Make the script executable:
+
+```bash
+chmod +x Dice_Game.sh
+```
+
+Run the game:
+
+```bash
+./Dice_Game.sh
+```
+
+---
+
+## Example
+
+```text
+🎲 Rolling the dice...
+
+┌───┐ ┌───┐ ┌───┐
+│ 6 │ │ 6 │ │ 6 │
+└───┘ └───┘ └───┘
+
+✔ Tris completed!
+```
+
+---
+
+## Technologies Used
+
+- Bash / Shell scripting
+- ANSI escape sequences
+- `tput` for terminal control and animations
+
+---
+
+## Author
+This project was developed by Aylane Mecibah as part of a university semester project at Paris Dauphine–PSL University.
