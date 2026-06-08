@@ -16,6 +16,8 @@ You just need a Linux/macOS terminal with Bash.
    cd Dice_game_in_bash
 ````
 2. Make the script executable:
-        chmod +x Dice_Game.sh
-3. Run the game
-         ./Dice_Game.sh
+        ```bash
+   chmod +x Dice_Game.sh
+4. Run the game
+       ```bash
+   ./Dice_Game.sh
