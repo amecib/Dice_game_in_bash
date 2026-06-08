@@ -2,7 +2,7 @@
 
 A terminal-based casino dice game written entirely in **Bash/Shell**.
 
-This project was developed as part of a semester assignment and recreates a casino-style experience directly in your terminal, featuring colorful output, animated dice rolls, and both single-player and multiplayer modes.
+This project was developed as part of a semester assignment and recreates a casino-style experience directly in your terminal, featuring colorful output, animated dice rolls, and both single-player and multiplayer modes. The interface and game messages are in French.
 
 ---
 
