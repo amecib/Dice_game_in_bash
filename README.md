@@ -84,4 +84,4 @@ Run the game:
 ---
 
 ## Author
-This project was developed by Aylane Mecibah as part of a university semester project at Paris Dauphine–PSL University.
+This project was developed by Amecib as part of a university semester project at Paris Dauphine–PSL University.
