@@ -25,7 +25,7 @@ To win the game, a player must achieve all **three unique combinations** at leas
 |------------|-------------|
 | **Tris** | Three of a kind (all three dice show the same value) |
 | **Paire** | A pair (at least two dice show the same value) |
-| **Échelle** | A straight (three consecutive values, e.g. 2-3-4) |
+| **Échelle** | Three consecutive values, regardless of the order of the dice (e.g. 2-3-4, 3-4-2, or 4-2-3) |
 
 ---
 
