@@ -84,4 +84,4 @@ Run the game:
 ---
 
 ## Author
-This project was developed by Amecib (nickname if you want to fully credit me just send me a message in order to give you my name and surname) as part of a university semester project at Paris Dauphine–PSL University.
+This project was developed by Amecib as part of a university semester project at Paris Dauphine–PSL University. If you wish to credit this work, feel free to message me for my full name.
