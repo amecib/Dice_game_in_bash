@@ -86,3 +86,11 @@ Run the game:
 ## Author
 This project was developed by Amecib as part of a university semester project at Paris Dauphine–PSL University. If you wish to credit this work, feel free to message me for my full real
 name.
+
+---
+**Please note:** While this documentation is in English, the game's interface, menus, and terminal messages are entirely in French.
+
+---
+
+## Disclaimer
+**Please note:** This is an independent student project developed for academic purposes. It is not officially affiliated with, endorsed by, or maintained by Paris Dauphine–PSL University. The university bears no responsibility for the code, data handling, or any potential issues arising from the use of this software.
