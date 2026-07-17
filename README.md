@@ -92,5 +92,9 @@ name.
 
 ---
 
+---
+
 ## Disclaimer
-**Please note:** This is an independent student project developed for academic purposes. It is not officially affiliated with, endorsed by, or maintained by Paris Dauphine–PSL University. The university bears no responsibility for the code, data handling, or any potential issues arising from the use of this software.
+**Please note:** This is an independent student project developed strictly for academic purposes. It is not officially affiliated with, endorsed by, or maintained by Paris Dauphine–PSL University. 
+
+This software is provided "as is" without warranty of any kind. This project is meant for educational demonstration only and should not be used for personal or commercial purposes. The author and the university bear no responsibility for the code, data handling, or any potential issues or damages arising from the use of this software. For full legal terms, please refer to the [MIT License](LICENSE) included in this repository.
